@@ -22,7 +22,8 @@ interface Stock extends Omit<RawStock, 'name' | 'category'> { }
 `
 })
 export class AppComponent implements OnInit {
-  // Just for simplicity, realistically will be fetched from an api or via WebSocket of some kind
+  // Just for simplicity, realistically will be fetched from an api 
+  // or via WebSocket of some kind
   stocks: RawStock[] = [
     {
       symbol: 'AAPL',
